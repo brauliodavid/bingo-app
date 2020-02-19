@@ -1,0 +1,74 @@
+<html lang="en">
+    <head>
+        <title>Bingo</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="bingo.js"></script>
+    </head>
+    <body onload="init()" class="bingo-app">
+        <div id="bingo-content">
+            <table id="bingo-card">
+                <tr>
+                    <th class="header">B</th>
+                    <th class="header">I</th>
+                    <th class="header">N</th>
+                    <th class="header">G</th>
+                    <th class="header">O</th>
+                </tr>
+                <tr>
+                    <td><input id="bl0" class="block" type="button" value="&nbsp;" onclick="markSquare('bl0')"></td>
+                    <td><input id="bl1" class="block" type="button" value="&nbsp;" onclick="markSquare('bl1')"></td>
+                    <td><input id="bl2" class="block" type="button" value="&nbsp;" onclick="markSquare('bl2')"></td>
+                    <td><input id="bl3" class="block" type="button" value="&nbsp;" onclick="markSquare('bl3')"></td>
+                    <td><input id="bl4" class="block" type="button" value="&nbsp;" onclick="markSquare('bl4')"></td>
+                </tr>
+                <tr>
+                    <td><input id="bl5" class="block" type="button" value="&nbsp;" onclick="markSquare('bl5')"></td>
+                    <td><input id="bl6" class="block" type="button" value="&nbsp;" onclick="markSquare('bl6')"></td>
+                    <td><input id="bl7" class="block" type="button" value="&nbsp;" onclick="markSquare('bl7')"></td>
+                    <td><input id="bl8" class="block" type="button" value="&nbsp;" onclick="markSquare('bl8')"></td>
+                    <td><input id="bl9" class="block" type="button" value="&nbsp;" onclick="markSquare('bl9')"></td>
+                </tr>
+                <tr>
+                    <td><input id="bl10" class="block" type="button" value="&nbsp;" onclick="markSquare('bl10')"></td>
+                    <td><input id="bl11" class="block" type="button" value="&nbsp;" onclick="markSquare('bl11')"></td>
+                    <td><input id="bl12" class="block" type="button" value="FREE" onclick="markSquare('bl12')"></td>
+                    <td><input id="bl13" class="block" type="button" value="&nbsp;" onclick="markSquare('bl13')"></td>
+                    <td><input id="bl14" class="block" type="button" value="&nbsp;" onclick="markSquare('bl14')"></td>
+                </tr>
+                <tr>
+                    <td><input id="bl15" class="block" type="button" value="&nbsp;" onclick="markSquare('bl15')"></td>
+                    <td><input id="bl16" class="block" type="button" value="&nbsp;" onclick="markSquare('bl16')"></td>
+                    <td><input id="bl17" class="block" type="button" value="&nbsp;" onclick="markSquare('bl17')"></td>
+                    <td><input id="bl18" class="block" type="button" value="&nbsp;" onclick="markSquare('bl18')"></td>
+                    <td><input id="bl19" class="block" type="button" value="&nbsp;" onclick="markSquare('bl19')"></td>
+                </tr>
+                <tr>
+                    <td><input id="bl20" class="block" type="button" value="&nbsp;" onclick="markSquare('bl20')"></td>
+                    <td><input id="bl21" class="block" type="button" value="&nbsp;" onclick="markSquare('bl21')"></td>
+                    <td><input id="bl22" class="block" type="button" value="&nbsp;" onclick="markSquare('bl22')"></td>
+                    <td><input id="bl23" class="block" type="button" value="&nbsp;" onclick="markSquare('bl23')"></td>
+                    <td><input id="bl24" class="block" type="button" value="&nbsp;" onclick="markSquare('bl24')"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="card-info">
+            <div id="goals">
+                <p>Check Card: 
+                    <button class="button" name="line" id="bLine" onclick="checkLineBingo()">Line</button>
+                    <button class="button" name="full" id="bFull" onclick="checkFullBingo()">Full Card</button>
+                </p>
+            </div>
+            <div id="actions">
+                <p>Actions: 
+                    <button class="button" name="call" id="bCall" onclick="callNumber()">Call</button>
+                    <button class="button" name="bingo" id="bBingo" onclick="checkForBingo()">Bingo</button>
+                </p>
+            </div>
+            <p>Current Number: <span id="currentCall">&nbsp;</span></p>
+            <p>Called Numbers:  <span id="calledNums">None</span></p>
+            <button class="new-card" onclick="createAnotherCard()">Create a new card</button>
+        </div>
+        
+    </body>
+</html>

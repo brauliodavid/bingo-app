@@ -1,0 +1,99 @@
+body { 
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background: #232323;
+}
+
+.bingo-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card-info {
+    padding: 30px;
+}
+
+p { color: #ffffff; }
+
+a { color: #99d8ff; }
+
+a:hover { color: #ffb219; }
+
+a, a:hover { text-decoration: none; }
+
+th, td {
+    border: 2.5px solid black;
+    text-align: center;
+}
+
+.block {
+    font-size: 20px;
+	background-color:#ffffff;
+	width: 100%;
+	padding: 20px;
+	border: none;
+}
+
+#bingo-card {
+    margin: 0 auto;
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    border-collapse: collapse;
+    background: #d3d3d3;
+}
+
+.header {
+    background: #42baf4;
+    font-size: 20px;
+}
+
+#goals, #actions { 
+    color: #ffffff; 
+    text-align: center;
+}
+
+.button {
+    background-color: #1462d6; 
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 2px 2px;
+    margin-top: -10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 100px;
+}
+
+.button:hover {
+    background-color: #4286f4; 
+    color: #ffffff;
+}
+
+.block { cursor: pointer; }
+
+button:focus { outline:0; }
+
+span {
+    background: #585858;
+    padding: 10px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.new-card {
+    padding: 15px 25px;
+    text-align: center;
+    background-color: #c50909;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
